@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
             String description = jsonObject.getString("description");
             Log.d("weather" , description);
 
-            this.weather.setText(description);
+            this.weather.setText("It is " + description + " in " + cityName.getText().toString());
         } catch (Exception e){
             Log.d("error" , e.toString());
         }
